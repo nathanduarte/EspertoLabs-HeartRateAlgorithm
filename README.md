@@ -2,7 +2,9 @@
 This algorithm was developed for the Esperto Watch in Fall 2018. Esperto Labs (www.espertolabs.ca) is a student design team at the University of Waterloo.
 
 
-**System Overview:** The Watch uses a MAX30102 pulse plethysmography (PPG) sensor which has an infrared (IR) and red channel. For this heart rate (HR) detection algorithm, only the IR channel was used. A SAMD21 microcontroller was used for real-time processing and was connected to the MAX30102 sensor via an I2C connection. The embedded code was implemented in an Arduino C environment.
+Alt-System Overview:
+======
+The Watch uses a MAX30102 pulse plethysmography (PPG) sensor which has an infrared (IR) and red channel. For this heart rate (HR) detection algorithm, only the IR channel was used. A SAMD21 microcontroller was used for real-time processing and was connected to the MAX30102 sensor via an I2C connection. The embedded code was implemented in an Arduino C environment.
 
 
 **Algorithm Design:** The algorithm uses a combined frequency-domain and time-domain approach to calculate heart rate. Heart rate is determined every 10 seconds using the past 10 seconds of data with a sampling rate of 12.5 Hz.
